@@ -10,5 +10,3 @@ Inserting the Data : -
 
 Display All Data : -
 ----------------------------------
-![data](https://user-images.githubusercontent.com/34789553/61037185-31843980-a3e8-11e9-9176-f1cc5aa4ebd2.png)
-
