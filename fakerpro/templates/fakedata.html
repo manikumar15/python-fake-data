@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>fake data</title>
+</head>
+<body>
+	{% if fakedata %}
+	<center>
+		<table border="2px">
+			<thead>
+				<tr>
+					<td><center>ID</center></td>
+					<th><center>firstname</center></th>
+					<th><center>lastname</center></th>
+					<th><center>email</center></th>
+					<th><center>job</center></th>
+					<th><center>salary</center></th>
+					<th><center>city</center></th>
+				</tr>
+			</thead>
+	
+	{% for i in fakedata %}
+		<tbody>
+		
+			<tr>
+				<td><center>{{i.id}}</center></td>
+				<td><center>{{i.first_name}}</center></td>
+				<td><center>{{i.last_name}}</center></td>
+				<td><center>{{i.email}}</center></td>
+				<td><center>{{i.job}}</center></td>
+				<td><center>{{i.salary}}</center></td>
+				<td><center>{{i.city}}</center></td>
+			</tr>
+		</tbody>
+
+{% endfor %}
+</table>
+</center>
+{% else %}
+<h2>Data is not available</h2>
+{% endif %}
+</body>
+</html>
